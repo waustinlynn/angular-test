@@ -15,4 +15,65 @@
   </ul>
   <hr />
   <!-- Table and buttons should be placed below -->
+  <table class="table table-bordered table-striped">
+    <thead>
+      <tr>
+        <td>
+          <button (click)="sortPlayers('name')">Sort</button>
+        </td>
+        <td>
+          <button (click)="sortPlayers('position')">Sort</button>
+        </td>
+        <td>
+          <button (click)="sortPlayers('jerseyNumber')">Sort</button>
+        </td>
+        <td>
+          <button (click)="sortPlayers('dateOfBirth')">Sort</button>
+        </td>
+        <td>
+          <button (click)="sortPlayers('nationality')">Sort</button>
+        </td>
+        <td>
+          <button (click)="sortPlayers('contractUntil')">Sort</button>
+        </td>
+        <td>
+          <button (click)="sortPlayers('marketValue')">Sort</button>
+        </td>
+      </tr>
+      <tr>
+        <th>
+          Name
+        </th>
+        <th>
+          Position
+        </th>
+        <th>
+          Jersey Number
+        </th>
+        <th>
+          Date Of Birth
+        </th>
+        <th>
+          Nationality
+        </th>
+        <th>
+          Contract Until
+        </th>
+        <th>
+          Market Value
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let x of players">
+        <td>{{x.name}}</td>
+        <td>{{x.position}}</td>
+        <td>{{x.jerseyNumber}}</td>
+        <td>{{x.dateOfBirth}}</td>
+        <td>{{x.nationality}}</td>
+        <td>{{x.contractUntil}}</td>
+        <td>{{x.marketValue}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>

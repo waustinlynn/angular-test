@@ -1,3 +1,7 @@
 .maincontent {
     margin: 0 10px;
 }
+
+th{
+	text-decoration: underline
+}
