@@ -16,29 +16,12 @@
   <hr />
   <!-- Table and buttons should be placed below -->
   <table class="table table-bordered table-striped">
-    <thead>
-      <tr>
-        <td>
-          <button (click)="sortPlayers('name')">Sort</button>
-        </td>
-        <td>
-          <button (click)="sortPlayers('position')">Sort</button>
-        </td>
-        <td>
-          <button (click)="sortPlayers('jerseyNumber')">Sort</button>
-        </td>
-        <td>
-          <button (click)="sortPlayers('dateOfBirth')">Sort</button>
-        </td>
-        <td>
-          <button (click)="sortPlayers('nationality')">Sort</button>
-        </td>
-        <td>
-          <button (click)="sortPlayers('contractUntil')">Sort</button>
-        </td>
-        <td>
-          <button (click)="sortPlayers('marketValue')">Sort</button>
-        </td>
+    <thead>      
+      <button (click)="reset()">RESET LIST</button>  
+      <tr *ngFor="let x of postions | unique">
+        <button (click)="filter(x.position)">
+          {{x.position}}
+        </button>        
       </tr>
       <tr>
         <th>
