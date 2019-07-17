@@ -9,5 +9,6 @@ To run application:
 * RUN ng serve
 * app will run on localhost:4200
 * Instructions to complete the test will be on the landing page
+* Upon completion, fork this repository to a separate Github account and open a pull request in to the master branch
 
 If you have issues with the angular cli, install it globally by running 'npm install -g @angular/cli' in the root project directory
