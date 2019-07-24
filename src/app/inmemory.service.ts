@@ -1,5 +1,8 @@
 import { Injectable } from '@angular/core';
+import { Observable, of } from 'rxjs';
+import { delay } from 'rxjs/internal/operators';
 
+ 
 @Injectable({
   providedIn: 'root'
 })
@@ -7,7 +10,12 @@ export class InmemoryService {
 
   constructor() { }
 
-  players = [
+
+  getPlayers(): Observable <any[]> {
+     return of(this.players).pipe(delay(500));
+  }
+
+ players = [
     {
       name: "Sven Ulreich",
       position: "Keeper",
