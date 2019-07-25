@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { PlayerComponent } from './Player.component';
-import { AgGridModule } from 'ag-grid-angular';
+
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { SharedModule } from '../Shared/shared.module';
 
 @NgModule({
     declarations: [ PlayerComponent],
     imports: [
         CommonModule,
         FormsModule,
-        AgGridModule.withComponents([])
+        SharedModule
+       
     ]
 })
 

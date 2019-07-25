@@ -14,7 +14,7 @@ export class InmemoryService {
   getPlayers(): Observable <any[]> {
      return of(this.players).pipe(delay(500));
   }
-
+ 
  players = [
     {
       name: "Sven Ulreich",
