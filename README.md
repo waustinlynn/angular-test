@@ -11,4 +11,6 @@ To run application:
 * Instructions to complete the test will be on the landing page
 * Upon completion, fork this repository to a separate Github account and open a pull request in to the master branch
 
+Notes: It is preferred to code the exercise without using any third party packages that have not already been added. 
+
 If you have issues with the angular cli, install it globally by running 'npm install -g @angular/cli' in the root project directory
